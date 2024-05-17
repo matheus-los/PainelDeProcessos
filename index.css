@@ -1,0 +1,106 @@
+
+@import url("https://p.typekit.net/p.css?s=1&k=vcq1ovk&ht=tk&f=42595&a=158503986&app=typekit&e=css");
+
+@font-face {
+  font-family:"fieldwork-hum";
+  src:url("https://use.typekit.net/af/a16b90/00000000000000007735ce7a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/a16b90/00000000000000007735ce7a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/a16b90/00000000000000007735ce7a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+.tk-fieldwork-hum { 
+  font-family: "fieldwork-hum",sans-serif; 
+}
+
+body {
+  font-family: "fieldwork-hum", sans-serif;
+  margin: auto;
+  display: block;
+}
+
+header {
+  color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: left;
+  width: 100%;
+  background-image: url("http://www.jardimdasaudade.com/wp-content/uploads/8f6a8ecb04065cf40327291e14789564.png");
+  padding: 38px;
+  z-index: 1000;
+}
+
+nav {
+  width: 100% !important;
+  position: absolute;
+  top: 220px;
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 10px;
+  z-index: 50;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+nav a:hover{
+  background-color: #ddd;
+}
+
+.main {
+  text-align: left;
+  margin-top: 100px;
+  z-index: 1;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.coluna {
+  padding: 20px;
+  width: 100px;
+}
+
+@media (min-width: 600px){
+  .coluna{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#img {
+  position: static;
+  border-radius: 30px;
+  left: 85px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
+}
+
+footer {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #87b24f;
+  padding: 2px;
+}
