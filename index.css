@@ -9,7 +9,6 @@
   font-stretch: normal;
 }
 
-
 .tk-fieldwork-hum { 
   font-family: "fieldwork-hum",sans-serif; 
 }
@@ -30,7 +29,19 @@ header {
   color: white;
   text-align: left;
   background-image: url("img/Header.png");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
   padding: 22px;
+}
+
+.logo_jardim {
+  position: absolute; /* Permite posicionamento dentro do header */
+  top: 50%; /* Centraliza verticalmente */
+  right: 20px; /* Alinha à direita com uma margem de 20px (ajuste conforme necessário) */
+  transform: translateY(-50%); /* Centraliza a logo verticalmente */
+  max-height: 80%; /* Ajusta a altura da logo conforme necessário */
 }
 
 h1 {
@@ -44,7 +55,7 @@ h1 {
 }
 
 nav a {
-  font-size: 14px;
+  font-size: 12.9px;
   font-weight: bold;
   text-decoration: none;
   color: #333;
@@ -96,18 +107,23 @@ nav a:hover{
   display: block;
 }
 
+.primeira_sessao {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 .normativas {
   align-items: center;
-  background-image: url("img/Normativa-fundo.png");
+  background-color: #1A7E96;
   border-radius: 10px;
   padding: 40px;
-  margin: 50px;
+  margin: 30px;
   display: grid;
-  grid-template-columns: 10% 60% 30%;
+  grid-template-columns: 50% 50%;
 }
 
 .imagem_normativa {
-  width: 70%;
+  width: 30%;
 }
 
 .normativa_texto {
@@ -117,7 +133,7 @@ nav a:hover{
 }
 
 .botao_normativa {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 28px;
   background-color: transparent;
@@ -134,20 +150,70 @@ nav a:hover{
   transition: 0.5s;
 }
 
+.IA {
+  background-color: #1A7E96;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 20px;
+}
+
+.container_ia {
+  display: flex;
+  align-items: center;
+}
+
+.coluna_ia {
+  text-align: center;
+  padding: 25px;
+  margin: auto
+}
+
+.imagem_ia {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.titulo_ia {
+  text-align: center;
+}
+
+.botao_ia {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.botao_ia:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
 .main {
   text-align: left;
   flex: 1;
 }
 
+.departamentos {
+  text-align: center;
+  text-decoration: underline;
+  padding: 5px;
+}
+
 .container {
   display: flex;
   flex-wrap: flex;
-  gap: 20px;
-  padding: 20px;
+  gap: 0px;
+  margin: 10px;
 }
 
 .coluna {
-  padding: 25px;
+  padding: 30px;
   margin: auto;
 }
 
@@ -170,6 +236,7 @@ nav a:hover{
 }
 
 .imagem {
+  width: 80%;
   transition: crescer 0.5s ease-in-out;
 }
 
